@@ -1,1 +1,6 @@
-Obrađena je Scene2 iz programa FactoryIO. 
+Obrađena je Scene2 iz programa FactoryIO. Scena se sastoji iz 2 Conveyor-a i 2 Sensor-a.
+Potrebno je isprogramirati PLC tako da se kutija kontinualno kreće do kraja drugog Conveyor-a.
+Napomena: Prvi Conveyor je forsed true - Entry Conveyor.
+Kada Sensor A registruje kutiju potrebno je uključiti Conveyor, te nakon što Sensor B registruje kutiju isključiti.
+Logika koda je slijedeća: Sensor A će uključiti Conveyor i 'držati' ga uključenog pomoću kontakta od Conveyor-a, 
+a Sensor B prilikom svog uključenja u kolu isključuje Conveyor.
