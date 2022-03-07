@@ -1,1 +1,4 @@
-Obrađena je Scene1 iz programam FactoryIO. Scena se sastoji iz Conveyor-a i Sensor-a. Potrebno je isprogramirati PLC tako da se Conveyor zaustavi kada Sensor očita prisutnost kutije.Važno je napomenuti da je Convezor forsed true što znači da je prilikom pokretanja scene uvijek uključen.
+Obrađena je Scene1 iz programam FactoryIO. Scena se sastoji iz Conveyor-a i Sensor-a.
+Potrebno je isprogramirati PLC tako da se Conveyor zaustavi kada Sensor očita prisutnost kutije.
+Važno je napomenuti da je Conveyor forsed true što znači da je prilikom pokretanja scene uvijek uključen.
+Glavna logika ovog koda jeste ta da kada Sensor 'provede' tada treba da se Conveyor isključi.
