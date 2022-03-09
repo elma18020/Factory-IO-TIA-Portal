@@ -1,15 +1,12 @@
 Obrađena je Scene3 iz Factory IO koja predstavlja Filling Tank . 
-Scena se sastoji iz Filling valve, Discharging valve, tastera za otvaranje ili zatvarenje ventila - Fill i Discharge i 
-display-a koji predstavlja timer.
-Potrebno je isprogramirati PLC tako da pritiskom na zeleni taster se upali zelena lampica te otvara ventil Filling valve,
-ventil treba da bude otvoren 7 sekundi te se zatvara, vrijeme koje protiče se ispisuje na display-u. 
-Pritiskom na crveni taster pali se crvena lampica te se otvara ventil Discharging valve, 
-on ostaje otvoren 7 sekundi, vrijeme se ispisuje te se ventil ponovo zatvara.
-Logika koda je slijedeća: Network 1 služi za povezivanje sa Factory IO 
-Network 2 - Filling, je realizovano to da pritiskom na taster se pali lampica, ventil se otvara i pomocu timer-a sve to traje 7 sec,
-nakon čega se lampica gasi i ventil zatvara
-Network 3 - Discharging, je realizovano to da pritiskom na crveni taster se upali crvena lampica i otvori ventil te sve traje 7 sec, 
-nakon čega se lampica gasi i ventil zatvara
+Scena se sastoji iz Filling valve, Discharging valve, tastera za otvaranje ili zatvarenje ventila - Fill i Discharge i display-a koji predstavlja timer.
+Potrebno je isprogramirati PLC tako da pritiskom na zeleni taster se upali zelena lampica te otvara ventil Filling valve ventil treba da bude otvoren 7 sekundi te se zatvara, 
+vrijeme koje protiče se ispisuje na display-u. 
+Pritiskom na crveni taster pali se crvena lampica te se otvara ventil Discharging valve, on ostaje otvoren 7 sekundi, vrijeme se ispisuje te se ventil ponovo zatvara.
+Logika koda je slijedeća:
+Network 1 služi za povezivanje sa Factory IO 
+Network 2 - Filling, je realizovano to da pritiskom na taster se pali lampica, ventil se otvara i pomocu timer-a sve to traje 7 sec,nakon čega se lampica gasi i ventil zatvara
+Network 3 - Discharging, je realizovano to da pritiskom na crveni taster se upali crvena lampica i otvori ventil te sve traje 7 sec, nakon čega se lampica gasi i ventil zatvara
 U suštini Network 2 i 3 su isti ali samo sa drugim ulazima i izlazima
 Network 4 - Time on display, je realizovano to da se vrijeme sa timer-a iz network-a 2 ili 3 ispisuje na display, izlaz je Timer.
 
