@@ -1,0 +1,13 @@
+Obrađena je Scena "Pick & Place (Basic)" iz Factory IO. Potrebno je isprogramirati PLC tako da item premjesti sa jedne
+trake na drugu. Obrađena je verzija gdje je sistem pokrenut kada je prekidač podešen na auto te pritisnut taster start.
+Logika koda je slijedeća:
+Network 1: Predstvalja konekciju sa Factory IO
+Network 2 - Starting process: Podešavanjem prekidača na auto i pritiskom tastera start se uključuje Entryconveyor, lampica na start se pali.
+Network 3 - Item ready to grab: Kada sensor - item at ready očita prisustvo kutije, gase se oba conveyora te se robotska ruka pomjera po z osi.
+Network 4 - Grab item: Motor- move z se gasi, a motor Grab se aktivira kada je sensor - item detected aktiviran.
+Network 5 - Moving alog x: U ovom networku se robotska ruka pomjera po x osi kako bi kutija bila premještena iznad druge trake, gdje je potrebno da su zadovoljeni sledjeći uslovi:
+da se kutija nalazi u robotskoj ruci te da se ne dešava kretanje po z osi.
+Network 6 - Lowering item: Kutija se spušta na exit conveyor, pri sličnim uslovima kao i u prethodnom networku.
+Network 7 - Moving along z: Potrebno je vratiti robotsku ruku u njeno inicijalno stanje - pomjeranje po z osi, te se također gasi motor grab, kako bi se kutija ostavila.
+Network 8 - Both conveyors move: Potrebno je setovati oba conveyor-a kako bi jedna kutija došla na mjesto da se pokupi, a druga otišla.
+Network 9 - Counting items: Nakon što senzor - item at exit očita kutiju, potrebno je inkrementirati broj kutija i ispisati taj broj na display.
